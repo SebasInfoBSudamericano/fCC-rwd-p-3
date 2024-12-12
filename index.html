@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation of Python</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Navegation Bar</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Chapter_1">Chapter 1</a></li>
+            <li><a class="nav-link" href="#Chapter_2">Chapter 2</a></li>
+            <li><a class="nav-link" href="#Chapter_3">Chapter 3</a></li>
+            <li><a class="nav-link" href="#Chapter_4">Chapter 4</a></li>
+            <li><a class="nav-link" href="#Chapter_5">Chapter 5</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <hr>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article><p>This document is designed for individuals who want to learn Python from scratch. We will cover the basics through five progressive chapters.</p>
+            <p>By the end, readers will have a solid foundation to write simple programs and understand the core features of the language.</p>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Chapter_1">
+            <header>Chapter 1</header>
+            <h2>Installation and Environment Setup</h2>
+            <article>
+                <dl>
+                    <dt><span class="bold">Objective:</span></dt>
+                    <dd>Set up a suitable development environment to work with Python.</dd>
+
+                    <dt><span class="bold">Contents:</span></dt>
+                    <dd>
+                        <ol type="1">
+                            <li>
+                                <span class="bold">Download and Install Python:</span>
+                                <ul>
+                                    <li>Visit <a href="https://www.python.org">python.org</a> and download the latest version.</li>
+                                    <li>Ensure to include Python in the <span class="italyc">PATH</span> during installation.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="bold">Install an IDE:</span>
+                                <ul>
+                                    <li>
+                                        Recommendations:
+                                        <ul>
+                                            <li>Visual Studio Code (VS Code).</li>
+                                            <li>PyCharm Community Edition.</li>
+                                            <li>Thonny (ideal for beginners).</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="bold">Basic Setup:</span>
+                                <ul>
+                                    <li>Create and execute the first <span class="file">.py</span> file.</li>
+                                    <li>Use <span class="fuction">pip</span> to install additional packages.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="bold">Test Installation:</span>
+                                <ul>
+                                    <li>
+                                        Open the terminal and run:
+                                        <div class="code-container">
+                                            <div class="code-header">
+                                                <span>bash</span>
+                                            </div>
+                                            <div class="code-main">
+                                                <pre><code>
+python --version
+                                                </code></pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Create a <span class="file">hello_world.py</span> file with the following content:
+                                        <div class="code-container">
+                                            <div class="code-header">
+                                                <span>python</span>
+                                            </div>
+                                            <div class="code-main">
+                                                <pre><code>
+<span class="yellow">print</span>(<span class="green">"Hello, World!"</span>)
+                                                </code></pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Chapter_2">
+            <header>Chapter 2</header>
+            <h2>Basic Syntax and Control Structures</h2>
+            <article>
+                <dl>
+                    <dt>Objective:</dt>
+                    <dd>Understand Python's basic syntax and how to control program flow.</dd>
+
+                    <dt>Contents:</dt>
+                    <dd>
+                        <ol type="1">
+                            <li>Basic Syntax:
+                                <ul>
+                                    <li>Indentation and comments.</li>
+                                    <li>Variables and data types:
+                                        <div class="code-container">
+                                            <div class="code-header">
+                                                <span>python</span>
+                                            </div>
+                                            <div class="code-main">
+                                                <pre><code>
+name = <span class="green">"John"</span>
+age = <span class="red">25</span></code></pre> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Control Structures:
+                                <ul>
+                                    <li>Conditionals:
+                                        <div class="code-container">
+                                            <div class="code-header">
+                                                <span>python</span>
+                                            </div>
+                                            <div class="code-main">
+                                                <pre><code>
+<span class="blue">if</span> age >= <span class="red">18</span>: 
+    <span class="yellow">print</span>(<span class="green">"You are an adult."</span>)
+<span class="blue">else</span>:
+    <span class="yellow">print</span>(<span class="green">"You are a minor."</span>)
+                                                </code></pre>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>Loops:
+                                        <ul>
+                                            <li><span class="fuction">for<span>
+                                                <div class="code-container">
+                                                  <div class="code-header">
+                                                    <span>
+                                                      python
+                                                    </span>
+                                                  </div>
+                                                  <div class="code-main">
+                                                    <pre><code>
+<span class="blue">for</span> i <span class="blue">in</span><span class="yellow"> range</span>(<span class="red">5</span>):
+    <span class="yellow">print</span>(i)
+                                                    </code></pre>
+                                                  </div>
+                                                </div>
+                                            </li>
+                                            <li><span class="fuction">while<span>
+                                                <div class="code-container">
+                                                  <div class="code-header">
+                                                    <span>
+                                                      python
+                                                    </span>
+                                                  </div>
+                                                  <div class="code-main">
+                                                    <pre><code>
+counter = <span class="red">0</span>
+<span class="blue">while</span> counter < <span class="red">5</span>:
+    <span class="yellow">print</span>(counter)
+    counter += <span class="red">1</span>
+                                                    </code></pre>
+                                                  </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Input and Output:
+                                <div class="code-container">
+                                  <div class="code-header">
+                                    <span>
+                                      python
+                                    </span>
+                                  </div>
+                                  <div class="code-main">
+                                    <pre><code>
+name = <span class="yellow">input</span>(<span class="green">"What's your name?"</span>)
+<span class="yellow">print</span>(<span class="green">f"Hello, {name}!"</span>)
+                                    </code></pre>
+                                  </div>
+                                </div></li>
+                        </ol>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Chapter_3">
+            <header>Chapter 3</header>
+            <h2>Functions and Error Handling</h2>
+            <article>
+                <dl>
+                    <dt>Objective:</dt>
+                    <dd>Learn to modularize code using functions and handle common errors.</dd>
+
+                    <dt>Contents:</dt>
+                    <dd>
+                        <ol type="1">
+                            <li>Defining and Using Functions:
+                                <div class="code-container">
+                                  <div class="code-header">
+                                    <span>
+                                      python
+                                    </span>
+                                  </div>
+                                  <div class="code-main">
+                                    <pre><code>
+<span class="blue">def</span> <span class="red">greet</span>(name):
+    <span class="yellow">print</span>(<span class="green">f"Hello, {name}!"</span>)
+
+greet(<span class="green">"Anna"</span>)
+                                    </code></pre>
+                                  </div>
+                                </div>
+                            </li>
+                            <li>Parameters and Return Values:
+                                <div class="code-container">
+                                  <div class="code-header">
+                                    <span>
+                                      python
+                                    </span>
+                                  </div>
+                                  <div class="code-main">
+                                    <pre><code>
+<span class="blue">def</span> <span class="red">add</span>(a, b):
+    <span class="blue">return</span> a + b
+
+result = add(<span class="red">3</span>, <span class="red">5</span>)
+<span class="yellow">print</span>(result)
+                                    </code></pre>
+                                  </div>
+                                </div>
+                            </li>
+                            <li>Error Handling with <span class="fuction">try-except</span>
+                            <div class="code-container">
+                              <div class="code-header">
+                                <span>
+                                  python
+                                </span>
+                              </div>
+                              <div class="code-main">
+                                <pre><code>
+<span class="blue">try</span>:
+    number = <span class="yellow">int</span>(<span class="yellow">input</span>(<span class="green">"Enter a number: "</span>))
+    <span class="yellow">print</span>(<span class="green">f"The double is {number * <span class="red">2</span>}"</span>)
+<span class="blue">except</span> valueError:
+    <span class="yellow">print</span>(<span class="green">"You must enter a valid number"</span>)
+                                </code></pre>
+                              </div>
+                            </div></li>
+                        </ol>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Chapter_4">
+            <header>Chapter 4</header>
+            <h2>Introduction to Collections</h2>
+            <article>
+                <dl>
+                    <dt>Objective:</dt>
+                    <dd>Master the use of lists, tuples, sets, and dictionaries.</dd>
+
+                    <dt>Contents:</dt>
+                    <dd>
+                        <ol>
+                            <li>Lists:
+                                <ul><li>Creating and manipulating lists:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+fruits = [<span class="green">"apple"</span>, <span class="green">"banana"</span>, <span class="green">"cherry"</span>]
+fruits.append(<span class="green">"orange"</span>)
+<span class="yellow">print</span>(fruits)
+                                        </code></pre>
+                                      </div>
+                                    </div>
+                                </li></ul>
+                            </li>
+                            <li>Tuples:
+                                <ul><li>Immutable collections:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+colors = (<span class="green">"red"</span>, <span class="green">"green"</span>, <span class="green">"blue"</span>)
+<span class="yellow">print</span>(colors[<span class="red">0</span>])
+                                        </code></pre>
+                                      </div>
+                                    </div>
+                                </li></ul>
+                            </li>
+                            <li>Sets:
+                                <ul><li>Set operations:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+numbers = {<span class="red">1</span>, <span class="red">2</span>, <span class="red">3</span>, <span class="red">4</span>}
+numbers.add(<span class="red">5</span>)
+<span class="yellow">print</span>(numbers)
+                                        </code></pre>
+                                      </div>
+                                    </div>
+                                </li></ul>
+                            </li>
+                            <li>Dictionaries:
+                                <ul><li>Key-value pairs:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+person = {<span class="green">"name"</span>: <span class="green">"Carlos"</span>, <span class="green">"age"</span>: <span class="red">30</span>}
+<span class="yellow">print</span>(person[<span class="green">"name"</span>])
+                                        </code></pre>
+                                      </div>
+                                    </div>
+                                </li></ul>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Chapter_5">
+            <header>Chapter 5</header>
+            <h2>Introduction to Modules and Libraries</h2>
+            <article>
+                <dl>
+                    <dt>Objective:</dt>
+                    <dd>Learn to use modules and libraries to expand Python's capabilities.</dd>
+
+                    <dt>Contents:</dt>
+                    <dd>
+                        <ol>
+                            <li>Importing Modules:
+                                <div class="code-container">
+                                  <div class="code-header">
+                                    <span>
+                                      python
+                                    </span>
+                                  </div>
+                                  <div class="code-main">
+                                    <pre><code>
+<span class="blue">import</span> math
+<span class="yellow">print</span>(math.sqrt(<span class="red">16</span>))
+                                    </code></pre>
+                                  </div>
+                                </div>
+                            </li>
+                            <li>Using Popular Libraries:
+                                <ol>
+                                    <li><span class="fuction">random</span>:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+<span class="blue">import</span> random
+<span class="yellow">print</span>(random.randint(<span class="red">1</span>, <span class="red">10</span>))
+                                        </code></pre>
+                                      </div>
+                                    </div></li>
+                                    <li><span class="fuction">datetime</span>:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+<span class="blue">from</span> datetime <span class="blue">import</span> datetime
+<span class="yellow">print</span>(datetime.now())
+                                        </code></pre>
+                                      </div>
+                                    </div></li>
+                                </ol>
+                            </li>
+                            <li>Creating Your Own Module:
+                                <ul>
+                                    <li>File <span class="file">utilities.py</span>:
+                                    <div class="code-container">
+                                      <div class="code-header">
+                                        <span>
+                                          python
+                                        </span>
+                                      </div>
+                                      <div class="code-main">
+                                        <pre><code>
+<span class="blue">def</span> <span class="red">greet</span>(name):
+    <span class="blue">return</span> <span class="green">f"Hello, {name}!"</span>
+                                        </code></pre>
+                                      </div>
+                                    </div></li>
+                                    <li>Main file:
+                                        <div class="code-container">
+                                          <div class="code-header">
+                                            <span>
+                                              python
+                                            </span>
+                                          </div>
+                                          <div class="code-main">
+                                            <pre><code>
+<span class="blue">from</span> utilities <span class="blue">import</span> greet
+<span class="yellow">print</span>(greet(<span class="green">"Luis"</span>))
+                                            </code></pre>
+                                          </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </dd>
+                </dl>
+            </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <article><p>This material provides a structured and practical Introduction to Python programming. By following these chapters, readers will gain a strong foundation for more advanced projects, such as web development, data analysis, or artificial intelligence.</p></article>
+        </section>
+    </main>
+</body>
+</html>
