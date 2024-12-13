@@ -1,0 +1,159 @@
+@layer reset{
+	*, *::before, *::after { box-sizing: border-box; }
+
+	* { margin: 0; padding: 0; }
+
+	body { line-height: 1.5; }
+
+	ol, ul { list-style: none; }
+
+	p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+
+	img, picture, video, canvas, svg {
+		display: block;
+		max-inline-size: 100%;
+	}
+
+	:not([class]) {
+		h1&, h2&, h3&, h4&, h5&, h6& {
+			margin-block: 0.75em;
+			line-height: 1.25;
+			text-wrap: balance;
+			letter-spacing: -0.05ch;
+		}
+
+		/* p&, ol&, ul& {
+			margin-block: 1em;
+		} */
+
+		ol&, ul& {
+			padding-inline-start: 1.5em;
+			list-style: revert;
+		}
+
+		li& {
+			margin-block: 0.5em;
+		}
+	}
+}
+
+body{
+	background-color: #212121; 
+	color: #ECECEC;
+	font-family: sans-serif, "Times New Roman";
+	position: relative;
+}
+
+header{ 
+	font-weight: bold; 
+	text-align: left; 
+	margin-top: 30px;
+}
+
+hr{
+	width: 99%;
+}
+
+.main-section header,.main-section h2{
+	display: inline-block;
+	margin-inline: .25em;
+}
+
+.main-section:last-child:first-child{
+	margin-top: .2em;
+}
+
+#main-doc{
+	padding-left: 1em;
+	right: 0;
+	margin-left: 25vh;
+}
+
+#navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 25vh;
+	padding-left: 1em;
+}
+#navbar ul{
+	padding: 0;	
+	height: 84vh;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 1.25em 1em;
+	background-color: #2F2F2F;
+}
+
+#navbar a{
+	color: #ECECEC;
+	text-decoration: none;
+}
+
+.code-container{
+	margin: 1em;
+}
+
+.code-header span{
+	color: #B4B4B4;
+	padding: .25em;
+}
+
+.code-header{
+  	background-color: #2F2F2F;
+	padding-inline-start: 1em;
+
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+}
+
+.code-main{
+	background-color: #0D0D0D;
+	padding-inline: 1em;
+
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+}
+
+code{ font-family: monospace; }
+
+.blue{ color: #2E95D3; }
+
+.red{ color: #DF3079; }
+
+.yellow{ color: #E9950C; }
+
+.green{ color: #00A67D; }
+
+
+@media (max-width: 700px)  {
+	dl, ul, ol{
+		display: flex;
+		flex-direction: column;
+	}
+	#navbar{
+		width: 100%;
+		position: relative;
+	}
+	#navbar ul{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		column-gap: 0.5em;
+	}
+	#navbar li{
+		border-radius: 100px;
+		background-color: #2F2F2F;
+	}
+	#main-doc{
+		margin: 0;
+		width: 100%;
+	}
+	span, p, dt, dd, li{
+		word-wrap: break-word;
+		word-break: break-all;
+		overflow-wrap: break-word;
+	}
+}
